@@ -1,0 +1,25 @@
+# 3D-Agent Configuration
+
+# Text-to-3D API Provider: meshy | tripo | threedai
+TEXT3D_PROVIDER: meshy
+TEXT3D_API_KEY: your_meshy_api_key_here
+
+# Vision LLM Provider: openai | anthropic
+VISION_PROVIDER: openai
+VISION_API_KEY: your_openai_api_key_here
+VISION_MODEL: gpt-4o  # или claude-3-sonnet-20240229 для Anthropic
+
+# Blender settings
+BLENDER_PATH: /usr/bin/blender
+RENDER_ENGINE: CYCLES  # CYCLES или BLENDER_EEVEE
+RENDER_RESOLUTION: 1024
+RENDER_SAMPLES: 128
+
+# Agent settings
+MAX_ITERATIONS: 5
+SCORE_THRESHOLD: 85
+OUTPUT_DIR: ./output
+
+# Logging
+LOG_LEVEL: INFO
+SAVE_INTERMEDIATE_RENDERS: true
